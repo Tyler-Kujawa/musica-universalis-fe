@@ -1,0 +1,44 @@
+<div class="container container-fluid">
+    <div class="row">
+        <div class="col-8 left">
+            <div class="well clear-top">
+                <h3>Course Overview</h3>
+                <p>Level: <em>{{ userLevel }}</em></p>
+
+                <div class="levels">
+                    <div *ngFor="let level of selectedCourse.levels">
+                        <div class="row">
+                            <div class="col" *ngFor="let subject of level.subjects">
+                                <h5>{{ subject.name }}</h5>
+                                <p>{{ subject.overview }}</p>
+                                <button class="btn btn-success round">Go</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="col-4 right">
+            <div class="row">
+                <div class="well clear-top">
+                    <h4>User Overview</h4>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="well accent-color">
+                    <h4>Other Stuff</h4>
+                </div>
+            </div>
+
+            <div class="row">
+                    <div class="well dark">
+                        <h4>Even More Stuff</h4>
+                    </div>
+                </div>
+        
+        </div>
+    </div>
+</div>
