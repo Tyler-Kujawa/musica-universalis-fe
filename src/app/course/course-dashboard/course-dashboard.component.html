@@ -7,15 +7,18 @@
 
                 <div class="levels">
                     <div *ngFor="let level of selectedCourse.levels">
-                        <div class="row">
-                            <div class="col" *ngFor="let subject of level.subjects">
-                                <h5>{{ subject.name }}</h5>
-                                <p>{{ subject.overview }}</p>
-                                <button class="btn btn-success round">
-                                    <a routerLink="/quiz">Go</a>
-                                </button>
+                        
+                        <div *ngIf="level != null">
+                            <div class="row">
+                                <div class="col" *ngFor="let subject of level.subjects">
+                                    <h5>{{ subject.topicDisplay }}</h5>
+                                    <button class="btn btn-success round">
+                                        <a [routerLink]="['/subjects', subject.topicId]">Go</a>
+                                    </button>
+                                </div>
                             </div>
                         </div>
+                        
                     </div>
                 </div>
 

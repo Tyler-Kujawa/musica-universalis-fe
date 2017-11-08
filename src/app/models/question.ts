@@ -1,6 +1,8 @@
 export interface Question{
-    text: string
-    img_url: string
+    questionFormat: string,
+    answerFormat: string,
+    text: string,
     options: string[],
-    answer: string;
+    answer: string,
+    img_url: string
 }

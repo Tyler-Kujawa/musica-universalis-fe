@@ -84,3 +84,13 @@ em{
 .well, .well.dark, .well.accent-color{
   min-height: 250px;
 }
+
+.lead{
+  color: white;
+}
+
+a, a:hover,
+a:active{
+  color:white !important;
+  text-decoration: none !important;
+}
