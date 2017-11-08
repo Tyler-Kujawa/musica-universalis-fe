@@ -21,3 +21,66 @@ body {
     width: 50%;
 
 }
+
+.well{
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  min-height: 200px;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.well.clear-top{
+  margin-top: 50px;
+}
+
+.well h3, h4{
+  color: rgb(118, 82, 124);
+}
+
+.well p{
+  color: rgba(0,0,0,.5);
+}
+
+em{
+  color: #28a745;
+  font-weight: bold;
+}
+
+.col{
+  width: 100% !important;
+}
+
+.btn.round{
+  border-radius: 100px;
+}
+
+.well.accent-color{
+  background-color:rgb(118, 82, 124);
+}
+
+.well.accent-color h4{
+ color: white;
+}
+
+.well.dark{
+  background-color:black;
+  border: 1px solid white;
+}
+
+.well.dark h4{
+ color: white;
+}
+
+.right .well {
+  margin-left: 20px;
+}
+
+.well.dark, .well.accent-color{
+  margin-top: 30px;
+}
+
+.well, .well.dark, .well.accent-color{
+  min-height: 250px;
+}

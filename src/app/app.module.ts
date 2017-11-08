@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { QuizComponent } from './quiz/quiz.component';
 
 import { AppRoutingModule } from './app-routing.module';
 
@@ -11,7 +12,8 @@ import { AppRoutingModule } from './app-routing.module';
   declarations: [
     AppComponent,
     HomepageComponent,
-    DashboardComponent
+    DashboardComponent,
+    QuizComponent
   ],
   imports: [
     BrowserModule,

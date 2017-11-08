@@ -11,7 +11,9 @@
                             <div class="col" *ngFor="let subject of level.subjects">
                                 <h5>{{ subject.name }}</h5>
                                 <p>{{ subject.overview }}</p>
-                                <button class="btn btn-success round">Go</button>
+                                <button class="btn btn-success round">
+                                    <a routerLink="/quiz">Go</a>
+                                </button>
                             </div>
                         </div>
                     </div>

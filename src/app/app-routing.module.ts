@@ -3,11 +3,13 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { HomepageComponent } from './homepage/homepage.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { QuizComponent } from './quiz/quiz.component';
 
 const routes: Routes = [
-    {path: '', redirectTo: '/home', pathMatch: 'full'  },
+    {path: '', redirectTo: '/home', pathMatch: 'full' },
     {path: 'home', component: HomepageComponent },
-    {path: 'dashboard', component: DashboardComponent}
+    {path: 'dashboard', component: DashboardComponent},
+    {path: 'quiz', component: QuizComponent}
 ]
 @NgModule({
     imports: [ RouterModule.forRoot(routes) ], 
