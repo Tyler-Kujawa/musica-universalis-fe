@@ -1,0 +1,83 @@
+
+.well.colored-header{
+    padding-top:0;
+    padding-left:0;
+    padding-right:0;
+}
+
+.well.colored-header .title-section{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.title-section{
+    background-color: rgb(118, 82, 124);
+    margin-bottom: 30px;
+    padding-left: 40px;
+}
+
+.title-section p, 
+.title-section h5{
+    color:white;
+    margin-left: 40px;
+}
+
+.title-section p{
+    margin-bottom:30px;
+    
+}
+
+.title-section h5{
+    margin-top: 30px;
+}
+
+.subject-list-section{
+    margin-left: 40px;
+}
+
+.lesson-summary-box{
+    text-align: center;
+    margin:20px auto 20px auto;
+    width: 70%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 50px grey;
+    padding: 20px;
+} 
+
+.lesson-summary-box button{
+    margin: 0 auto;
+}
+
+.lesson-summary-box .subject-title{
+    font-weight: bold;
+    margin: 20px 0 0 0;
+    color: black;
+}
+
+.lesson-summary-box p{
+    margin-top: 0x;
+}
+
+.lesson-summary-box button{
+    margin-top: 50px;
+}
+
+hr{
+    size: 2px;
+    border-top: 1px solid grey;
+    width: 85%;
+}
+
+.tips-and-info-section{
+    margin-left: 70px;
+    width: 85%;
+    margin: 0 auto;
+}
+
+.tips-and-info-section h5{
+    color: black;
+}
+
+.tips-and-info-section .info-block{
+    margin: 40px 0 40px 0;
+}

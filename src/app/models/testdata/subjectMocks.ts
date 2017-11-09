@@ -21,6 +21,42 @@ export class SubjectMocks {
             completed: false,
             questionList: this.questionsMock.questions
         }
+        
+        this.subjects[7] = {
+            topicId: 'TrebleClef1',
+            topicDisplay: 'Treble Clef 1',
+            overview: 'Learning the basics of the treble clef',
+            image_url: 'empty',
+            completed: false,
+            questionList: this.questionsMock.questions
+        }
+
+        this.subjects[8] = {
+            topicId: 'TrebleClef1',
+            topicDisplay: 'Treble Clef 1',
+            overview: 'Learning the basics of the treble clef',
+            image_url: 'empty',
+            completed: false,
+            questionList: this.questionsMock.questions
+        }
+
+        this.subjects[9] = {
+            topicId: 'TrebleClef1',
+            topicDisplay: 'Treble Clef 1',
+            overview: 'Learning the basics of the treble clef',
+            image_url: 'empty',
+            completed: false,
+            questionList: this.questionsMock.questions
+        }
+
+        this.subjects[10] = {
+            topicId: 'TrebleClef1',
+            topicDisplay: 'Treble Clef 1',
+            overview: 'Learning the basics of the treble clef',
+            image_url: 'empty',
+            completed: false,
+            questionList: this.questionsMock.questions
+        }
     
         this.subjects[1] = {
             topicId: 'TrebleClef2',

@@ -1,5 +1,63 @@
-<div class="well">
-    <div *ngFor="let subject of subjects">
-        <h2>{{subject.topicDisplay}}</h2>
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 offset-md-2">
+            <div class="well clear-top colored-header">
+
+                <div class="title-section">
+                    <div class="row">
+                        <h5>{{ topic }}</h5>
+                    </div>
+                
+                    <div class="row">
+                        <p>{{ lessonsCompleted }}/{{ lessonsTotal }} Lessons Completed</p>            
+                    </div>
+                </div>
+            
+                <div class="subject-list-section">
+                    <div class="row">
+                        <div *ngFor="let subject of subjects">
+                            <div class="lesson-summary-box">
+                                <p class="subject-title">{{ subject.topicDisplay }}</p>
+                                <p>{{ subject.overview }}</p>
+                                <button class="btn btn-success btn-lg round">Launch</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="tips-and-info-section">
+                    <div class="info-block">
+                        <h5>Tips and Info</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sapien lectus, aliquet eget nunc nec, facilisis ultrices magna. Quisque congue urna in semper lacinia. Ut ut auctor lectus, ac euismod velit. Maecenas convallis placerat viverra. In ultrices elit quis turpis ullamcorper, ut rhoncus lacus efficitur. Proin id diam quis nisl rutrum suscipit. Donec ultrices hendrerit malesuada. Pellentesque facilisis risus auctor neque varius imperdiet sit amet non nibh. Suspendisse a dolor porta ex eleifend vestibulum at sed mi. Curabitur cursus efficitur elementum. Aliquam erat volutpat.
+                            Nulla molestie, enim in commodo tempor, diam mi elementum tellus, vel placerat sem ex vitae est. Ut fermentum nec sem at interdum. Aenean ac enim id lectus mollis hendrerit. Nulla blandit ut diam non suscipit. Nam posuere justo id nunc suscipit ornare. Proin cursus dolor eget leo efficitur facilisis. Proin enim neque, egestas vel malesuada a, laoreet sit amet ex. Aliquam tempor eros nec vulputate convallis. Vivamus at pretium lectus. Nam vitae mauris eros. Quisque convallis id sapien quis tempus. Phasellus fermentum nulla sit amet lectus sagittis, in interdum nunc hendrerit. Nulla facilisi. Nulla scelerisque congue porta. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse potenti.
+                        </p>
+                    </div>
+
+                    <div class="info-block">
+                        <h5>Tips and Info</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sapien lectus, aliquet eget nunc nec, facilisis ultrices magna. Quisque congue urna in semper lacinia. Ut ut auctor lectus, ac euismod velit. Maecenas convallis placerat viverra. In ultrices elit quis turpis ullamcorper, ut rhoncus lacus efficitur. Proin id diam quis nisl rutrum suscipit. Donec ultrices hendrerit malesuada. Pellentesque facilisis risus auctor neque varius imperdiet sit amet non nibh. Suspendisse a dolor porta ex eleifend vestibulum at sed mi. Curabitur cursus efficitur elementum. Aliquam erat volutpat.
+                            Nulla molestie, enim in commodo tempor, diam mi elementum tellus, vel placerat sem ex vitae est. Ut fermentum nec sem at interdum. Aenean ac enim id lectus mollis hendrerit. Nulla blandit ut diam non suscipit. Nam posuere justo id nunc suscipit ornare. Proin cursus dolor eget leo efficitur facilisis. Proin enim neque, egestas vel malesuada a, laoreet sit amet ex. Aliquam tempor eros nec vulputate convallis. Vivamus at pretium lectus. Nam vitae mauris eros. Quisque convallis id sapien quis tempus. Phasellus fermentum nulla sit amet lectus sagittis, in interdum nunc hendrerit. Nulla facilisi. Nulla scelerisque congue porta. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse potenti.
+                        </p>
+                    </div>
+                    
+                    <div class="info-block">
+                        <h5>Tips and Info</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sapien lectus, aliquet eget nunc nec, facilisis ultrices magna. Quisque congue urna in semper lacinia. Ut ut auctor lectus, ac euismod velit. Maecenas convallis placerat viverra. In ultrices elit quis turpis ullamcorper, ut rhoncus lacus efficitur. Proin id diam quis nisl rutrum suscipit. Donec ultrices hendrerit malesuada. Pellentesque facilisis risus auctor neque varius imperdiet sit amet non nibh. Suspendisse a dolor porta ex eleifend vestibulum at sed mi. Curabitur cursus efficitur elementum. Aliquam erat volutpat.
+                            Nulla molestie, enim in commodo tempor, diam mi elementum tellus, vel placerat sem ex vitae est. Ut fermentum nec sem at interdum. Aenean ac enim id lectus mollis hendrerit. Nulla blandit ut diam non suscipit. Nam posuere justo id nunc suscipit ornare. Proin cursus dolor eget leo efficitur facilisis. Proin enim neque, egestas vel malesuada a, laoreet sit amet ex. Aliquam tempor eros nec vulputate convallis. Vivamus at pretium lectus. Nam vitae mauris eros. Quisque convallis id sapien quis tempus. Phasellus fermentum nulla sit amet lectus sagittis, in interdum nunc hendrerit. Nulla facilisi. Nulla scelerisque congue porta. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse potenti.
+                        </p>
+                    </div>
+                    
+                    <div class="info-block">
+                        <h5>Tips and Info</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sapien lectus, aliquet eget nunc nec, facilisis ultrices magna. Quisque congue urna in semper lacinia. Ut ut auctor lectus, ac euismod velit. Maecenas convallis placerat viverra. In ultrices elit quis turpis ullamcorper, ut rhoncus lacus efficitur. Proin id diam quis nisl rutrum suscipit. Donec ultrices hendrerit malesuada. Pellentesque facilisis risus auctor neque varius imperdiet sit amet non nibh. Suspendisse a dolor porta ex eleifend vestibulum at sed mi. Curabitur cursus efficitur elementum. Aliquam erat volutpat.
+                            Nulla molestie, enim in commodo tempor, diam mi elementum tellus, vel placerat sem ex vitae est. Ut fermentum nec sem at interdum. Aenean ac enim id lectus mollis hendrerit. Nulla blandit ut diam non suscipit. Nam posuere justo id nunc suscipit ornare. Proin cursus dolor eget leo efficitur facilisis. Proin enim neque, egestas vel malesuada a, laoreet sit amet ex. Aliquam tempor eros nec vulputate convallis. Vivamus at pretium lectus. Nam vitae mauris eros. Quisque convallis id sapien quis tempus. Phasellus fermentum nulla sit amet lectus sagittis, in interdum nunc hendrerit. Nulla facilisi. Nulla scelerisque congue porta. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse potenti.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
     </div>
 </div>
