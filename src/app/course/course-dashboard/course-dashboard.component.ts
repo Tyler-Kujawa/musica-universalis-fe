@@ -1,22 +1,32 @@
+import { Observable } from 'rxjs/RX'
+
 import { Component } from '@angular/core';
 import { Course } from '../../models/course';
-import { Level } from '../../models/level';
 import { Subject } from '../../models/subject';
 
 import { CourseService } from '../course.service';
 
 @Component({
     templateUrl: './course-dashboard.component.html',
-    styleUrls: ['course-dashboard.component.css']
+    styleUrls: ['course-dashboard.component.css'],
+    providers: [ CourseService ]
 })
 export class CourseDashboardComponent{
 
-    constructor(private _courseService: CourseService){ 
+    banner:String = 'Dashboard';
+    userLevel: string = "Two";   
+    courses: Course[];
+    errorMessage: string;
+
+    constructor(private courseService: CourseService){ 
     }
 
-    banner = 'Dashboard';
-    userCourses: Course[];
-    userLevel: string = "Two";
+    ngOnInit(){
+        this.courseService.getUserCourse().subscribe((courses: Course[]) => {
+            this.courses = courses;
+        })
+    }
 
-    selectedCourse: Course = this._courseService.getUserCourse();
+    getCourse(){
+    }
 }

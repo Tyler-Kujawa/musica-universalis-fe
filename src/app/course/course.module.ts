@@ -15,7 +15,7 @@ import { CourseDashboardComponent } from './course-dashboard/course-dashboard.co
         CourseDashboardComponent
     ],
     exports: [ CommonModule ],
-    providers: [],
+    providers: [ ],
 })
 export class CourseModule {
     

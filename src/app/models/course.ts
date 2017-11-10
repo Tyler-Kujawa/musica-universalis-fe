@@ -1,9 +1,7 @@
-import { Level } from './level'
+import { Subject } from './subject'
 
 export interface Course{
     name: string,
     overview: string,
-    levels: Level[],
-    difficulty: string,
-    image_url: string
+    subjects: Subject[],
 }

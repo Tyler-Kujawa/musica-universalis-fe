@@ -1,10 +1,8 @@
-import { Question } from './question';
+import { QuestionSet } from './question-set';
 
 export interface Subject{
-    topicId: string,
-    topicDisplay: string,
+    name: string,
     overview: string
-    image_url: string,
     completed: boolean,
-    questionList: Question[]
+    questionSets: QuestionSet[]
 }

@@ -1,25 +1,24 @@
 import { Injectable } from '@angular/core'
+import { Http, Response, Headers, RequestOptions } from '@angular/http'
+import { Observable } from 'rxjs/Rx'
 
 import { Course } from '../models/course'
-import { TestDataRepo } from '../models/testdata/TestDataRepo'
 
 @Injectable()
 export class CourseService{
 
-    getAllCourses(): Course[]{
-        return null;
+    private courseUrl = "api/course";
+
+    constructor(private http: Http){
     }
 
-    getUserCourse(): Course{
-        let tdRepo = new TestDataRepo();
-        return tdRepo.course;
+    // returns an Observable
+    getUserCourse() {
+        return this.http.get("api/course")
+                        .map((response: Response) => response.json())
     }
 
-    getAllUserCourses(): Course[]{
-        return null;
-    }
-
-    findCourseByName(): Course[]{
-        return null;
+    private handleError(error: Response | any){
+        return Observable.throw("Something Happened");
     }
 }

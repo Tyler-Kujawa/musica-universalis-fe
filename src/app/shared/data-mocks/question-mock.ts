@@ -1,12 +1,12 @@
-import { Question } from '../question' 
+import { Question } from '../../models/question' 
 
-export class QuestionMocks {
+export class QuestionMock {
 
     questions: Question[];
 
     constructor(){
         
-        this.questions = new Array(100);
+        this.questions = new Array(2);
 
         this.questions[0] = {
             questionFormat: "text",
